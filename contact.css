@@ -22,6 +22,7 @@ h1{
 }
 fieldset{
     width: 650px;
+    margin-top: 70px;
     margin-left: 70px;
     border-color: rgba(255, 215, 0, 0.7);
     margin-bottom: 4px;

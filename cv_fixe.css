@@ -1,0 +1,335 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 janv. 2017, 22:04:10
+    Author     : Léa
+*/
+/*Réglages généraux*/
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+/*Réglages du header*/
+header{
+    width: 270px;
+    position: fixed;
+    background-color: rgba(255, 120, 0, 0.8);
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    margin-top: 0px;
+    padding-bottom: 200px;
+}
+h1{
+    text-align: center;
+    margin: 14px;
+    margin-bottom: 25px;
+}
+header>h2{
+    text-align: center;
+    font-size: 19px;
+    margin: 14px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(250, 220, 0, 0.7);
+}
+header>nav{
+    text-align: right;
+}
+header>nav{
+    margin-top: 67px;
+}
+header li{
+    margin-left: 110px;
+    background-color: rgba(107, 107, 107, 0.7);
+    margin-bottom: 4.5px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 2px 2px 4px white;
+}
+header a:link{
+    color: #ffcc00;
+    text-shadow: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+header li:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: #ffcc00;
+}
+header a:hover{
+    color: black;
+}
+header a:visited{
+    color: #990000;
+}
+header li:visited{
+    color: #990000;
+    font-weight: normal;
+}
+
+
+
+
+div{
+    width: 950px;
+    margin-left: 340px;
+}
+
+/*Réglages de la partie Présentation (texte et photo)*/
+#Presentation{
+    width:475px;
+}
+
+h2{
+    text-shadow: 2px 2px 4px #ffcc00;
+    font-size: 48px;
+}
+
+.texte{
+    width: 330px;
+}
+#Presentation img{
+    width: 115px;
+    float: left;
+    margin-right: 15px;
+}
+.texte>p{
+    width: 400px;
+    text-align: justify;
+}
+
+/*Réglages du aside (à côté de Présentation)*/
+aside{
+    width: 380px;
+    font-size: 15px;
+    margin-top: 130px;
+    background-image: url('img/fondaside.jpg');
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+aside>h2{
+    font-size: 25px;
+    color: #990000;
+    text-shadow: 1px 1px 2px white;
+}
+aside img{
+    width: 20px;
+}
+
+#Presentation, aside{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Réglages Présentation2*/
+table{
+    width: 380px;
+    display: inline-block;
+    margin: 30px;
+    margin-bottom: 0px;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+caption{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgba(250, 220, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+table th{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    width: 195px;
+}
+table td{
+    font-size: 13px;
+    text-align: right;
+    width: 185px;
+    border-left: 2px solid rgba(250, 220, 0, 0.7);
+}
+
+
+td, th{
+    border-bottom: 2px solid rgba(250, 220, 0, 0.7);
+}
+
+/*Réglages Etudes*/
+#Etudes{
+    margin-bottom: 50px;
+}
+#Etudes .etu1>p, #Etudes .etu2>p, #Etudes .etu3>p{
+    background-color: rgba(255, 150, 0, 0.7);
+    width: 95px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.etu11, .etu22, .etu33{
+    width: 480px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+    border: 1px solid rgba(250, 150, 0, 0.5);
+}
+.etu1>p, .etu1 .etu11{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu2>p, .etu2 .etu22{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu3>p, .etu3 .etu33{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu11, .etu22, .etu33{
+    margin-left: 10px;
+}
+#Etudes h4{
+    margin: 0px;
+}
+.etu1, .etu2, .etu3{
+    margin-top: 35px;
+}
+
+/* Réglages partie Réalisations Personnelles*/
+#Projet img{
+    width: 340px;
+}
+.CV, .Cours{
+    width: 380px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 20px;
+}
+.CV{
+    margin-right: 72px;
+}
+.Cours{
+    margin-left: 72px;
+}
+.CV p, .Cours p{
+    width: 330px;
+    font-size: 14px;
+    text-align: center;
+}
+.CV h4, .Cours h4{
+    font-size: 13px;
+    background-color: rgba(255, 100, 0, 0.8);
+    width: 120px;
+    padding: 5px;
+    position: absolute;
+}
+.Cours h4{
+    bottom: 49px;
+}
+.CV h4{
+    bottom: 102.5px;
+}
+#Projet a{
+    width: 10px;
+}
+#Projet a:link{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+}
+#Projet a:hover{
+    color:rgba(250, 150, 0, 0.8);
+    text-decoration: underline;
+}
+#Projet a:visited{
+    color:rgba(250, 20, 0, 0.5);
+    font-weight: bold;
+}
+
+
+/* Réglages partie Emploi*/
+#Emploi{
+    margin-bottom: 5%;
+    position: relative;
+}
+#Emploi .boulot>p{
+    background-color: rgba(255, 150, 0, 0.7);
+    width: 10%;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.B1{
+    width: 475px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+    border: 1px solid rgba(250, 150, 0, 0.5);
+}
+.boulot>p, .boulot .B1{
+    display: inline-block;
+    vertical-align: top;
+}
+.B1{
+    margin-left: 10px;
+}
+#Emploi h4{
+    margin: 0px;
+}
+.boulot{
+    margin-top: 190px;
+}
+#Emploi img{
+    position: absolute;
+    right: 380px;
+}
+
+/* Réglages partie Intérêts Personnels*/
+#Activites img{
+    width: 70px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul ul{
+    display: none;
+}
+li:hover ul.menu2{
+    display: block;
+}
+#Activites li{
+    width: 300px;
+}
+.menusport, .menuautre{
+    width: 380px;
+}
+.menusport{
+    display: inline-block;
+    vertical-align: top;
+}
+.menuautre{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgba(255, 120, 0, 1);
+    padding-bottom: 4px;
+    padding-top: 4px;
+}

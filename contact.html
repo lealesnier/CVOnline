@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire de contact</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="contact.css" media="screen"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header><h1>Pour me contacter</h1></header>
+        <form method="post" action="script2.php">
+            <fieldset id="coord">
+                <legend>Vos coordonnées</legend>
+                <label for="nm">Votre Nom :</label>
+                <input type="text" name="nom" id="nm" required /><br/>
+                
+                <label for="prn">Votre Prénom :</label>
+                <input type="text" name="prenom" id="prn" required/><br/>
+                
+                <label for="mail">Votre adresse E-mail :</label>
+                <input type="text" name="email" id="mail" placeholder="ex : contact@hotmail.fr" required/><br/>
+                
+                <label for="msg">Sujet du message</label>
+                <input type="text" name="sujet" id="msg"/><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Votre message</legend>
+                <textarea name="txt" placeholder="Laissez moi votre message !" rows="10"></textarea>
+            </fieldset>
+            <p id="envoyer">
+            <input type="submit" value="Envoyer">
+            </p>
+            <p id="eff">
+                <input type="reset" value="Effacer">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,332 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 janv. 2017, 22:04:10
+    Author     : Léa
+*/
+/*Réglages généraux*/
+body{
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    margin: 0%;
+}
+
+/*Réglages du header*/
+header{
+    width: 20%;
+    position: fixed;
+    background-color: rgba(255, 120, 0, 0.8);
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    margin-top: 0%;
+    padding-bottom: 15%;
+}
+h1{
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 10%;
+}
+header>h2{
+    text-align: center;
+    font-size: 120%;
+    margin: 5%;
+    margin-bottom: 10%;
+    text-shadow: 2px 2px 4px rgba(250, 220, 0, 0.7);
+}
+header>nav{
+    text-align: right;
+}
+header>nav{
+    margin-top: 25%;
+}
+header li{
+    margin-left: 45%;
+    background-color: rgba(107, 107, 107, 0.7);
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 2px 2px 4px white;
+}
+header a:link{
+    color: #ffcc00;
+    text-shadow: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+header li:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: #ffcc00;
+}
+header a:hover{
+    color: black;
+}
+header a:visited{
+    color: #990000;
+}
+header li:visited{
+    color: #990000;
+    font-weight: normal;
+}
+
+
+
+
+div{
+    width: 70%;
+    margin-left: 25%;
+}
+
+/*Réglages de la partie Présentation (texte et photo)*/
+#Presentation{
+    width:50%;
+}
+
+h2{
+    text-shadow: 2px 2px 4px #ffcc00;
+    font-size: 300%;
+}
+
+.texte{
+    width: 70%;
+}
+#Presentation img{
+    width: 35%;
+    float: left;
+    margin-right: 4%;
+}
+.texte>p{
+    width: 115%;
+    text-align: justify;
+}
+
+/*Réglages du aside (à côté de Présentation)*/
+aside{
+    width: 40%;
+    font-size: 90%;
+    margin-top: 13%;
+    background-image: url('img/fondaside.jpg');
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+aside>h2{
+    font-size: 150%;
+    color: #990000;
+    text-shadow: 1px 1px 2px white;
+}
+aside img{
+    width: 5%;
+}
+
+#Presentation, aside{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Réglages Présentation2*/
+table{
+    width: 40%;
+    display: inline-block;
+    margin: 3%;
+    margin-bottom: 0%;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+caption{
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: rgba(250, 220, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+table th{
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+}
+table td{
+    font-size: 80%;
+    text-align: right;
+    width: 50%;
+    border-left: 2px solid rgba(250, 220, 0, 0.7);
+}
+
+td, th{
+    border-bottom: 2px solid rgba(250, 220, 0, 0.7);
+}
+
+/*Réglages Etudes*/
+#Etudes{
+    margin-bottom: 5%;
+}
+#Etudes .etu1>p, #Etudes .etu2>p, #Etudes .etu3>p{
+    background-color: rgba(255, 150, 0, 0.7);
+    width: 10%;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.etu11, .etu22, .etu33{
+    width: 50%;
+    padding: 1%;
+    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+    border: 1px solid rgba(250, 150, 0, 0.5);
+}
+.etu1>p, .etu1 .etu11{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu2>p, .etu2 .etu22{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu3>p, .etu3 .etu33{
+    display: inline-block;
+    vertical-align: top;
+}
+.etu11, .etu22, .etu33{
+    margin-left: 1%;
+}
+#Etudes h4{
+    margin: 0%;
+}
+.etu1, .etu2, .etu3{
+    margin-top: 4%;
+}
+
+/* Réglages partie Réalisations Personnelles*/
+#Projet img{
+    width: 90%;
+}
+.CV, .Cours{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 2%;
+}
+.CV{
+    margin-right: 7.5%;
+}
+.Cours{
+    margin-left: 7.5%;
+}
+.CV p, .Cours p{
+    width: 90%;
+    font-size: 90%;
+    text-align: center;
+}
+.CV h4, .Cours h4{
+    font-size: 80%;
+    background-color: rgba(255, 100, 0, 0.8);
+    width: 30%;
+    padding: 1%;
+    position: absolute;
+}
+.Cours h4{
+    bottom: 24.5%;
+}
+.CV h4{
+    bottom: 40.2%;
+}
+#Projet a{
+    width: 150%;
+}
+#Projet a:link{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+}
+#Projet a:hover{
+    color:rgba(180, 20, 0, 0.6);
+    text-decoration: underline;
+}
+#Projet a:visited{
+    color:rgba(180, 20, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Réglages partie Emploi*/
+#Emploi{
+    margin-bottom: 5%;
+    position: relative;
+}
+#Emploi .boulot>p{
+    background-color: rgba(255, 150, 0, 0.7);
+    width: 10%;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.B1{
+    width: 50%;
+    padding: 1%;
+    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
+    border: 1px solid rgba(250, 150, 0, 0.5);
+}
+.boulot>p, .boulot .B1{
+    display: inline-block;
+    vertical-align: top;
+}
+.B1{
+    margin-left: 1%;
+}
+#Emploi h4{
+    margin: 0%;
+}
+.boulot{
+    margin-top: 20%;
+}
+#Emploi img{
+    position: absolute;
+    right: 40%;
+}
+
+/* Réglages partie Intérêts Personnels*/
+#Activites img{
+    width: 20%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul ul{
+    display: none;
+}
+li:hover ul.menu2{
+    display: block;
+}
+#Activites li{
+    width: 90%;
+}
+.menusport, .menuautre{
+    width: 40%;
+}
+.menusport{
+    display: inline-block;
+    vertical-align: top;
+}
+.menuautre{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgba(255, 120, 0, 1);
+    padding-bottom: 0.2%;
+    padding-top: 0.2%;
+}

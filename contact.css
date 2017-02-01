@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 janv. 2017, 18:12:38
+    Author     : Léa
+*/
+body{
+    font-family: Arial, sans-serif;
+    width: 850px;
+    margin: auto;
+    background-image: url('img/contact.jpg');
+    background-size: 850px auto;
+    background-repeat: no-repeat;
+    background-position: 58% 38%;
+}
+h1{
+    text-shadow: 2px 2px 4px rgb(255, 215, 0);
+}
+fieldset{
+    width: 650px;
+    margin-left: 70px;
+    border-color: rgba(255, 215, 0, 0.7);
+    margin-bottom: 4px;
+}
+label{
+    font-weight: bold;
+    display: inline-block;
+    width: 250px;
+}
+
+textarea{
+    width: 600px;
+}
+#envoyer{
+    width: 50px;
+    padding-right: 355px;
+}
+#eff{
+    width: 50px;
+    padding-left: 340px;
+}
+#envoyer, #eff{
+    display: inline-block;
+    vertical-align: top;
+}
+
+

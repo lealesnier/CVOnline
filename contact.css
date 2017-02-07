@@ -12,7 +12,7 @@ body{
     width: 850px;
     margin: auto;
     background-image: url('img/contact.jpg');
-    background-size: 850px auto;
+    background-size: 850px;
     background-repeat: no-repeat;
     background-position: 58% 38%;
     height: 100vh;

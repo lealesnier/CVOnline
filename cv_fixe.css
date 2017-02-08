@@ -11,117 +11,88 @@ and open the template in the editor.
 body{
     font-family: Arial, sans-serif;
     font-size: 16px;
-    margin: 0px;
+    margin: auto;
+    text-align: center;
+    color: #4c4643;
 }
 
 /*Réglages du header*/
 header{
-    width: 270px;
-    position: fixed;
-    background-color: rgba(255, 120, 0, 0.8);
-    color: black;
-    text-shadow: 2px 2px 4px white;
     margin-top: 0px;
-    padding-bottom: 200px;
-    height: 100vh;
+    padding: 2px;
+    padding-bottom: 4px;
 }
 h1{
     text-align: center;
     margin: 14px;
-    margin-bottom: 25px;
+    color: rgb(64, 165, 181);
 }
 header>h2{
     text-align: center;
-    font-size: 19px;
+    font-size: 30px;
     margin: 14px;
-    margin-bottom: 25px;
-    text-shadow: 2px 2px 4px rgba(250, 220, 0, 0.7);
 }
-header>nav{
-    text-align: right;
-}
-header>nav{
-    margin-top: 67px;
-}
-header li{
-    margin-left: 110px;
-    background-color: rgba(107, 107, 107, 0.7);
-    margin-bottom: 4.5px;
-    padding-bottom: 7px;
-    padding-top: 7px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 4px white;
-}
-header a:link{
-    color: #ffcc00;
-    text-shadow: none;
-    font-weight: bold;
-    text-decoration: none;
-}
-header li:hover{
-    color: black;
-    text-decoration: underline;
-    background-color: #ffcc00;
-}
-header a:hover{
-    color: black;
-}
-header a:visited{
-    color: #990000;
-}
-header li:visited{
-    color: #990000;
-    font-weight: normal;
+#Menu{
+    text-align: center;
+    background-color: rgb(85, 85, 85);
+    box-shadow: 1px 1px 2px black;
 }
 
+#Menu ul{
+    margin: 2px;
+}
+
+#Menu li{
+    margin: 6px;
+    padding: 7px;
+    border-radius: 20px;
+    display: inline-block;
+}
+#Menu a:link{
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+}
+#Menu li:hover{
+    background-color: rgb(169, 169, 169);
+}
+#Menu a:hover{
+    color: black;
+}
 
 
 
 div{
-    width: 950px;
-    margin-left: 340px;
+    padding-top: 40px;
 }
-
-/*Réglages de la partie Présentation (texte et photo)*/
+/*R�glages de la partie Pr�sentation (texte et photo)*/
 #Presentation{
-    width:475px;
+    width:510px;
 }
 
 h2{
-    text-shadow: 2px 2px 4px #ffcc00;
-    font-size: 48px;
+    font-size: 30px;
+    margin: 0px;
 }
 
 .texte{
-    width: 330px;
-}
-#Presentation img{
-    width: 115px;
-    float: left;
-    margin-right: 15px;
-}
-.texte>p{
-    width: 400px;
+    width: 480px;
     text-align: justify;
 }
 
 /*Réglages du aside (à côté de Présentation)*/
 aside{
-    width: 380px;
+    width: 320px;
     font-size: 15px;
-    margin-top: 130px;
-    background-image: url('img/fondaside.jpg');
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
 }
-aside>h2{
-    font-size: 25px;
-    color: #990000;
-    text-shadow: 1px 1px 2px white;
+
+aside>img{
+    width: 115px;
+    border: 3px solid rgb(64, 165, 181);
 }
-aside img{
+.avecimg img{
     width: 20px;
 }
 
@@ -143,33 +114,31 @@ caption{
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
-    color: rgba(250, 220, 0, 0.7);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #4c4643;
 }
 table th{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     text-align: left;
     width: 195px;
 }
 table td{
-    font-size: 13px;
+    font-size: 15px;
     text-align: right;
     width: 185px;
-    border-left: 2px solid rgba(250, 220, 0, 0.7);
+    border-left: 2px solid rgb(200, 200, 200);
 }
 
 
 td, th{
-    border-bottom: 2px solid rgba(250, 220, 0, 0.7);
+    border-bottom: 2px solid rgb(200, 200, 200);
 }
 
 /*Réglages Etudes*/
 #Etudes{
-    margin-bottom: 50px;
+    margin-top: 100px;
 }
 #Etudes .etu1>p, #Etudes .etu2>p, #Etudes .etu3>p{
-    background-color: rgba(255, 150, 0, 0.7);
     width: 95px;
     text-align: center;
     padding: 10px;
@@ -180,8 +149,8 @@ td, th{
 .etu11, .etu22, .etu33{
     width: 480px;
     padding: 10px;
-    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
-    border: 1px solid rgba(250, 150, 0, 0.5);
+    box-shadow: 3px 3px 4px rgb(64, 165, 181);
+    border: 1px solid rgba(64, 165, 181, 0.5);
 }
 .etu1>p, .etu1 .etu11{
     display: inline-block;
@@ -206,15 +175,17 @@ td, th{
 }
 
 /* Réglages partie Réalisations Personnelles*/
-#Projet img{
-    width: 340px;
+/*#Projet{
+    margin-top: 100px;
 }
+
 .CV, .Cours{
-    width: 380px;
+    width: 510px;
     display: inline-block;
     vertical-align: top;
     position: relative;
     margin: 20px;
+    text-align: center;
 }
 .CV{
     margin-right: 72px;
@@ -222,62 +193,55 @@ td, th{
 .Cours{
     margin-left: 72px;
 }
+
 .CV p, .Cours p{
     width: 330px;
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 15px;
 }
 .CV h4, .Cours h4{
-    font-size: 13px;
-    background-color: rgba(255, 100, 0, 0.8);
-    width: 120px;
+    font-size: 18px;
+    background-color: rgba(64, 165, 181, 0.8);
+    width: 150px;
     padding: 5px;
-    position: absolute;
 }
-.Cours h4{
-    bottom: 49px;
+.CV p, .CV h4{
+    display: inline-block;
+    vertical-align: top;
 }
-.CV h4{
-    bottom: 102.5px;
-}
+
 #Projet a{
     width: 10px;
 }
 #Projet a:link{
-    color: black;
+    color: rgb(100, 100, 100);
     font-weight: bold;
     text-decoration: underline;
-    text-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
 }
 #Projet a:hover{
-    color:rgba(250, 150, 0, 0.8);
+    color:rgb(180, 180, 180);
     text-decoration: underline;
-}
-#Projet a:visited{
-    color:rgba(250, 20, 0, 0.5);
-    font-weight: bold;
-}
+}*/
 
 
 /* Réglages partie Emploi*/
 #Emploi{
-    margin-bottom: 5%;
-    position: relative;
+    margin-top: 100px;
 }
 #Emploi .boulot>p{
-    background-color: rgba(255, 150, 0, 0.7);
-    width: 10%;
+    width: 95px;
     text-align: center;
-    padding: 1%;
+    padding: 5px;
     font-weight: bold;
-    margin: 0%;
+    margin: 0px;
 }
 
 .B1{
     width: 475px;
     padding: 10px;
-    box-shadow: 3px 3px 4px rgba(250, 150, 0, 0.5);
-    border: 1px solid rgba(250, 150, 0, 0.5);
+    box-shadow: 3px 3px 4px rgb(64, 165, 181);
+    border: 1px solid rgba(64, 165, 181, 0.8);
 }
 .boulot>p, .boulot .B1{
     display: inline-block;
@@ -290,14 +254,13 @@ td, th{
     margin: 0px;
 }
 .boulot{
-    margin-top: 190px;
-}
-#Emploi img{
-    position: absolute;
-    right: 380px;
+    margin-top: 40px;
 }
 
 /* Réglages partie Intérêts Personnels*/
+#Activites{
+    margin-top: 100px;
+}
 #Activites img{
     width: 70px;
 }
@@ -330,7 +293,136 @@ li:hover ul.menu2{
 
 footer{
     text-align: center;
-    background-color: rgba(255, 120, 0, 1);
+    background-color: rgb(64, 165, 181);
     padding-bottom: 4px;
     padding-top: 4px;
+}
+
+@media screen and (max-width: 650px){
+
+    h1{
+        font-size: 25px;
+    }
+    header>h2{
+        font-size: 20px;
+    }
+
+    #Menu li{
+        margin: 4px;
+        padding: 5px;
+    }
+/*R�glages de la partie Pr�sentation (texte et photo)*/
+    #Presentation{
+        width:400px;
+    }
+
+    h2{
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .texte{
+        width: 350px;
+        font-size: 15px;
+    }
+
+/*Réglages du aside (à côté de Présentation)*/
+    aside{
+        width: 190px;
+        font-size: 13px;
+    }
+/* Réglages partie Intérêts Personnels*/
+
+
+#Activites li{
+    width: 200px;
+    font-size: 15px;
+}
+.menusport, .menuautre{
+    width: 200px;
+    padding: 0px;
+}
+
+}
+@media screen and (max-width: 610px){
+    #Menu li{
+        margin: 2px;
+        padding: 2px;
+    }
+}
+@media screen and (max-width: 450px){
+    /*Réglages Présentation2*/
+    table{
+        width: 300px;
+        margin: 20px;
+    }
+    caption{
+        font-size: 14px;
+    }
+    table th{
+        font-size: 14px;
+    }
+    table td{
+        font-size: 12px;
+    }
+
+    .etu11, .etu22, .etu33{
+        width: 350px;
+    }
+
+    .B1{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    h1{
+        font-size: 20px;
+    }
+    header>h2{
+        font-size: 15px;
+    }
+    #Menu{
+        text-align: left;
+    }
+    #Menu ul{
+        margin: 2px;
+    }
+
+    #Menu li{
+        display: block;
+    }
+
+/*R�glages de la partie Pr�sentation (texte et photo)*/
+#Presentation{
+    width:320px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.texte{
+    width: 320px;
+}
+
+/*Réglages Présentation2*/
+table{
+    width: 300px;
+    margin: 25px;
+}
+
+/*Réglages Etudes*/
+
+.etu11, .etu22, .etu33{
+    width: 300px;
+}
+
+/* Réglages partie Emploi*/
+
+.B1{
+    width: 300px;
+}
+
 }

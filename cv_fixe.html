@@ -14,9 +14,11 @@ and open the template in the editor.
     <body>
         
         <header>
-        <h1>Léa LESNIER</h1>
-        <h2>Énergie, motivation et bonne humeur</h2>
-        <nav>
+        <h2>Léa LESNIER</h2>
+        <h1>Demande de Stage en Développement Web</h1>
+      </header>
+        
+      <nav id="Menu">
           <ul>
             <li><a href="#Presentation">Presentation</a></li>
             <li><a href="#Etudes">Etudes</a></li>
@@ -24,29 +26,29 @@ and open the template in the editor.
             <li><a href="#Emploi">Emploi</a></li>
             <li><a href="#Activites"><img src="activite.img" alt="Intérêts personnels"></a></li>
           </ul>
-        </nav>
-      </header>
+      </nav>
         
         
       <div>
         <section id='Presentation'>
           <h2>Presentation</h2>
           <article class="texte">
-              <img src="img/moi.jpg" alt="Photo de Présentation">
-              <p>J'ai découvert l'informatique au début de mes études de <strong>MIASHS</strong>, mais c'est en <strong>DUT Informatique</strong> que je trouve ma vocation :
-                  le web.</br>Depuis j'en suis passionnée, et j'ai une grande soif d'apprendre. Je serais la plus motivée des <strong>apprenties/stagiaire/employée...</strong> </br>
-              Pour en savoir un peu plus sur mon parcours, continuez la lecture !</p>
+              <p>&nbsp; Durant mes deux années en licence MIASHS, je découvre l'Informatique. Mais c'est en <strong>DUT Informatique</strong> que je découvre ma passion : le web. Je cherche aujourd'hui un poste de <strong>stagiaire, en tant que développeur web.</strong></br>  
+                  &nbsp; Dans l'idéal, j'aimerais exploiter toutes mes compétences durant ce stage, et pratiquer en tant que développeur front-end autant que développeur web. Mon domaine de compétence couvre différents langages de programmation web, tels que <strong>HTML5, CSS, PHP, et JavaScript++</strong>. De plus, je maîtrise les bases de données, par les biais de <strong>MySQL et PostgreSQL</strong>, étudiés au cours de ces deux dernières années. 
+                  Je suis curieuse de découvrir le développement web en situation réelle, et les contraintes que cela implique. Je me montre assidue dans mon travail, et capable d’autonomie autant que de <strong>travailler en groupe</strong>, ce que j’ai pu démontrer au cours des différents projets réalisés durant mes études. Je suis surtout très motivée par ce stage : j’ai une grande envie d’apprendre et de progresser. Je
+                 serais donc la plus motivée des stagiaires !
+</p>
           </article>
         </section>
           
           <aside>
-              <h2>Infos utiles</h2>
+              <img src="img/moi.jpg" alt="Photo de Présentation">
               <section><p>Naissance : 15/03/1996 (20ans)</br>
                       Permis B</br>
                       En possession d'une voiture</p></section>
-              <section class="avecimg">
-                  <p><img src='img/home.png' alt='Adresse'> 2, avenue Général Champon</br>
+                  <p>Adresse :</br> 2, avenue Général Champon</br>
                       38000 Grenoble</p>
+              <section class="avecimg">
                   <p><img src='img/telephone.png' alt='Téléphone'> 06 73 24 39 70</p>
                   <p><img src='img/mail.png' alt='Mail'> lea.lesnier@hotmail.fr</p>
               </section>
@@ -113,28 +115,25 @@ and open the template in the editor.
         </section>
           
           
-        <article id='Projet'>
+        <!-- <article id='Projet'>
           <h2>Réalisations Personnelles</h2>
           <article class="CV">
-              <img src="img/cv.png" alt="CV" width="200" height="150">
-            <p>Mon premier projet est celui que vous parcourez actuellement : la mise en ligne
-            de mon CV ! Celui-ci évolue en fonction de ce que
-            j'apprends, et le php ainsi que le javascript y feront
-            leur apparition.</p>
-            <h4>CV</h4>
-            <a href="index.html">CV version Fluide</a>
+                <h4>CV</h4>
+                <p>Mon premier projet est celui que vous parcourez actuellement : la mise en ligne
+                de mon CV ! Celui-ci évolue en fonction de ce que
+                j'apprends, et le php ainsi que le javascript y feront
+                leur apparition. Vous pouvez également consulter mon <a href="index.html">CV version Responsive</a></p>
           </article>
-          <article class="Cours">
+         <article class="Cours">
               <a><img src="img/cours.jpg" alt="Cours" width="200" height="150"></a>
             <p>Vous pouvez également consulter quelques créations réalisées dans le cadre de mes cours</p>
             <h4>Travaux Encadrés</h4>
           </article>
-        </article>
+        </article> -->
           
           
         <article id='Emploi'>
             <h2>Emploi</h2>
-            <img src="img/lahalle.jpg" alt="La Halle">
             <article class="boulot">
               <p>Eté 2015 et 2016</p>
                 <article class="B1">
@@ -146,11 +145,24 @@ and open the template in the editor.
                         Enfin, en tant que conseillère clientèle, j'ai développé une grande
                         capacité d'écoute et de compréhension des besoins du client.</p>
               </article>
+              <article class="boulot">
+              <p>Eté 2014</p>
+                <article class="B1">
+                    <h4>Employée de Mairie</h4>
+              </article>
+              </article>
+              <article class="boulot">
+              <p>Eté 2012</p>
+                <article class="B1">
+                    <h4>Service hôtellier</h4>
+              </article>
+              </article>
           </article>
         </article>
           
         <article id='Activites'>
             <h2>Intérêts Personnels</h2>
+            <nav class="sport">
             <ul class="menusport">
                 <li><img src='img/course.png' alt='Course'><h4>Course</h4>
                     <ul class="menu2">
@@ -170,8 +182,10 @@ and open the template in the editor.
                     </ul>
                 </li>
             </ul>
+            </nav>
+            <nav class="autre">
             <ul class="menuautre">
-                <li><img src='img/theatre.png' alt='Théâtre'><h4>Lecture</h4>
+                <li><img src='img/theatre.png' alt='Théâtre'><h4>Théâtre</h4>
                     <ul class="menu2">
                         <li><p>J'ai fait du théâtre pendant 7ans. J'ai eu la chance de toujours trouver
                             un club théâtre ou spectacle dans mon collège et mon lycée. Au lycée, les pièces
@@ -191,6 +205,7 @@ and open the template in the editor.
                     </ul>
                 </li>
             </ul>
+            </nav>
         </article>
       </div>
     <footer>
